@@ -1,0 +1,128 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BACKGROUND */
+body {
+  font-family: "Segoe UI", sans-serif;
+  color: #f8fafc;
+
+  background:
+    linear-gradient(
+      rgba(15, 23, 42, 0.75),
+      rgba(15, 23, 42, 0.75)
+    ),
+    url("bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  min-height: 100vh;
+}
+
+/* DARK OVERLAY */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(2, 6, 23, 0.4);
+  z-index: -1;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  color: #a5b4fc;
+  margin-top: 10px;
+}
+
+/* SECTIONS */
+section {
+  background: rgba(15, 23, 42, 0.75);
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 40px;
+
+  backdrop-filter: blur(6px);
+  box-shadow: 0 10px 30px #020617aa;
+}
+
+/* HEADINGS */
+h2 {
+  margin-bottom: 15px;
+  color: #c7d2fe;
+}
+
+/* TEXT */
+p {
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+/* LINKS */
+a {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+
+  background: #6366f1;
+  color: white;
+
+  border-radius: 10px;
+  font-size: 0.9rem;
+
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #818cf8;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: #cbd5f5;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  section {
+    padding: 22px;
+  }
+}
