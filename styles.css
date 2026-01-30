@@ -10,25 +10,16 @@ body {
   font-family: "Segoe UI", sans-serif;
   color: #f8fafc;
 
-  background:
-  linear-gradient(
-    rgba(15, 23, 42, 0.55),
-    rgba(15, 23, 42, 0.55)
-  ),
-  url("bg.jpeg");
-,
-   
-
-
+  background-image: url("./bg.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+
+  background-color: #020617;
 
   min-height: 100vh;
 }
 
-
-}
 
 /* CONTAINER */
 .container {
@@ -46,6 +37,10 @@ body {
 .hero h1 {
   font-size: 3.5rem;
   letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
 }
 
 .hero p {
